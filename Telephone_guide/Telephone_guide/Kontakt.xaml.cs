@@ -78,25 +78,25 @@ namespace Telephone_guide
         //удаление контакта
         private void delete_Click(object sender, RoutedEventArgs e)
         {
-           // Справочник_номеровEntities bd = new Справочник_номеровEntities();
-           // if (dat1.SelectedItem != null)
-           // {
-             //   var selectedRow = dat1.SelectedItem as phoneData;
+           Справочник_номеровEntities bd = new Справочник_номеровEntities();
+            if (dat1.SelectedItem != null)
+            {
+                var selectedRow = dat1.SelectedItem as dynamic;
 
                 // Удаляем запись из коллекции
-               // phoneData.Remove(selectedRow);
+                phoneData.ToList().Remove(selectedRow);
 
                 // Удаляем запись из базы данных
-              //  bd.Контакты.Remove(bd.Контакты.Find(selectedRow.ID_контакта));
+                bd.Контакты.Remove(bd.Контакты.Find(selectedRow.ID_контакта));
 
                 // Сохраняем изменения
-               // bd.SaveChanges();
-            
+                bd.SaveChanges();
+            }
 
         }
 
-        //сортировка имени по убыванию
-        private void imub_Click(object sender, RoutedEventArgs e)
+            //сортировка имени по убыванию
+            private void imub_Click(object sender, RoutedEventArgs e)
         {
             Справочник_номеровEntities bd = new Справочник_номеровEntities();
             var phoneData = (from p in bd.Контакты

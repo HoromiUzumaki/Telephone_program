@@ -26,7 +26,7 @@
         <Label Content="Дата рождения" HorizontalAlignment="Left" Margin="39,355,0,0" VerticalAlignment="Top"/>
         <DatePicker x:Name="dat" HorizontalAlignment="Left" Margin="147,356,0,0" VerticalAlignment="Top" Width="166"/>
         <Button Content="Сохранить" HorizontalAlignment="Left" Margin="39,399,0,0" VerticalAlignment="Top" Width="274" Click="Button_Click"/>
-        <Button Content="Перейти на другое окно" HorizontalAlignment="Center" Margin="0,424,0,0" VerticalAlignment="Top" Width="272" Click="Button_Click_1"/>
+        <Button Content="Перейти на другое окно" HorizontalAlignment="Center" Margin="0,424,0,0" VerticalAlignment="Top" Width="274" Click="Button_Click_1"/>
 
     </Grid>
 </Window>
